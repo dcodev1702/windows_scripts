@@ -12,6 +12,10 @@ ENABLE CMD:
 DISABLE CMD:
   -- local: powershell.exe -Command .\audit_process_creation.ps1 -DisableAudit
 
+TODO:
+-----
+Disable SMBv1 -> Disable-WindowsOptionalFeature -Online -FeatureName SMB1Protocol
+Disable PowerShell v2 -> Disable-WindowsOptionalFeature -Online -FeatureName MicrosoftWindowsPowerShellV2
 #>
 #Requires -RunAsAdministrator
 
